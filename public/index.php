@@ -23,6 +23,12 @@ require __DIR__ . '/../src/dependencies.php';
 // Register middleware
 require __DIR__ . '/../src/middleware.php';
 
+// Set up Manager database for Eloquent
+require __DIR__ . '/../src/capsule.php';
+
+// Register controllers
+require __DIR__ . '/../src/controllers.php';
+
 // Register routes
 require __DIR__ . '/../src/routes.php';
 
