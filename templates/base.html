@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}A Slim Framework application with Bootstrap 3{% endblock %}">
+    <meta name="author" content="">
+    {% block meta %}{% endblock %}
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>{% block title %}Sticky Footer Navbar Template for Bootstrap{% endblock %}</title>
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../public/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+{{ include('header.html', sandboxed = true) }}
+{% block content %}
+    {% block container %}
+    <div class="page-header">
+        <h1>Sticky footer with fixed navbar</h1>
+    </div>
+    <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
+    <p>Back to <a href="//getbootstrap.com/examples/sticky-footer">the default sticky footer</a> minus the navbar.</p>
+    {% endblock %}
+{% endblock %}
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
+<!-- Check for jQuery and Bootstrap, load them locally if they don't exist -->
+<script>if(!window.jQuery){document.write('<script src="/js/vendor/jquery.min.js"><\/script>')};</script>
+<script>if(typeof $.fn.emulateTransitionEnd != 'function'){document.write('<script src="/js/vendor/bootstrap.min.js"><\/script>')};</script>
+<script src="../public/js/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

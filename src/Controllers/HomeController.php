@@ -1,9 +1,9 @@
 <?php
 namespace App\Controllers;
 
-class HomeController {
+class HomeController extends Controller {
     
     public function getHome($request, $response, $args) {
-        die("Hello Home:::::");
+        return $this->view->render($response, '/home.html', []);
     }
 }

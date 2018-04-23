@@ -10,7 +10,7 @@ class AdminController extends Controller {
     }
     
     public function getAdmin($request, $response, $args) {
-        die("Hello Admin:::::");
+        return $this->view->render($response, '/admin.html', []);
     }
 
     public function getUsers($request, $response, $args) {
@@ -19,7 +19,5 @@ class AdminController extends Controller {
         return $this->view->render($response, '/admin/users.html', [
             'users' => $userData
         ]);
-        
-        //return $response->getBody()->write(json_encode($userData->toArray()));
     }
 }

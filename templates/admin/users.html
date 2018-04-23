@@ -1,5 +1,9 @@
-{% for user in users %}
-    * {{ user.user_name }}
-{% else %}
-    No users have been found.
-{% endfor %}
+{% extends "base.html" %}
+{% block title %}Usuarios{% endblock %}
+{% block container %}
+    {% for user in users %}
+        * {{ user.user_name }}
+    {% else %}
+        No users have been found.
+    {% endfor %}
+{% endblock %}

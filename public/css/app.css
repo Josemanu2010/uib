@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Simonetta');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Bungee+Inline|Krona+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+
+
+
+*{margin: 0; padding: 0;}
+
+html, body{ height: auto; background: #34495E; }
+
+
+/*************************************************************************************************************/
+/*Estilos que incluye la (Barra de navegacion - navbar - menÃº - links)*/
+.navbar{ background: #34495E !important; margin: 0; padding: 0; }
+.navbar > a{ color: #fff !important; }
+.navbar ul li a{ color: #fff !important; }
+.navbar > a:hover{ color: #1ABC9C !important; }
+.navbar ul li a:hover{ color: #1ABC9C !important; }
+.navbar a .profileStyle{ color: #852 !important; }
+.navbar ul li a .profileStyle{ color: #fff !important; }
+/*************************************************************************************************************/
+
+#sec{ padding-top: 10em; padding-bottom: 10em; }
+
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluye el modulo (Imagen de presentacion)*/
+.sectionOne{ height: 100vh; }
+.sectionOne #backimg{ position: relative; width: 100%; height: 100vh; background: url('../../public/img/s1.jpg') no-repeat center center; }
+.sectionOne #backimg::before{
+	content: '';
+	position: absolute;
+	top: 0; 
+	left: 0;
+	bottom: 0;
+	right: 0; 
+	background: linear-gradient(to bottom right, #000, #000);
+	opacity: .8;
+}
+.sectionOne #backimg .rgba{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+.sectionOne .contenido{ padding-top: 8em; color: #fff; position: absolute; top: 0; left: 0; }
+.sectionOne .contenido h1{ font-family: 'Anonymous Pro', monospace;
+font-size: 4em; color: #1ABC9C; }
+.sectionOne .contenido h5{ padding-top: 2em; font-family: 'Anonymous Pro', monospace; color: #0be881; }
+/*************************************************************************************************************/
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluyen el modulo (Seccion dos, quÃ© es UIB-WEB)*/
+.SectionTwo{ background: #f7f1e3; }
+/*************************************************************************************************************/
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluyen el modulo (Seccion tres, Presentacion Facultad de ingenieria)*/
+.sectionThree{ background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); }
+/*************************************************************************************************************/
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluyen el modulo (Seccion cuatro, Presentacion de Facultades)*/
+.sectionFour{ background: #f1f2f6; }
+.sectionFour .container .row h1{ font-family: 'Anonymous Pro', monospace;
+font-family: 'Bungee Inline', cursive; font-size: 3em;
+font-family: 'Krona One', sans-serif; color: #1ABC9C; }
+.sectionFour .padding{ padding-top: 5em; }
+.sectionFour .card-header, .sectionFour button{ background: #34495E !important; color: #fff; }
+.sectionFour button:hover{color: #1ABC9C !important;}
+/*************************************************************************************************************/
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluyen el modulo (Seccion cinco, Informacion sobre disponibilidad de los usuarios)*/
+.sectionFive{ background: -webkit-linear-gradient(top, #f9c667 0%,#f79621 100%); }
+.sectionFive .container .row h1{ color: #fff; font-family: 'Anonymous Pro', monospace;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Krona One', sans-serif; color: #fff; }
+.sectionFive .padding{ padding-top: 10em; }
+/*************************************************************************************************************/
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluyen el modulo (Seccion seis, FALTA POR COMPLETAR)*/
+.sectionSix{ background: -webkit-linear-gradient(top, #93cede 0%,#75bdd1 41%,#49a5bf 100%); }
+/*************************************************************************************************************/
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluye el modulo (Sobre Nosotros)*/
+.sectionSeven{ background: #f1f2f6; }
+/*************************************************************************************************************/
+
+
+
+
+
+.sectionEigth{ background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); }
+.sectionEight .container .row .card{ border-radius: 100px !important; }
+.sectionEight .container .row .card img{ border-radius: 100px !important; }
+.sectionEight .container .row h6{ font-size: 1.2em; }
+
+
+
+
+
+.sectionAnimate{ background: #91B496; }
+.sectionAnimate .container .row h4{ font-family: 'Roboto Condensed', sans-serif; }
+.sectionAnimate .container .row .contenedor h4{ font-family: 'Roboto Condensed', sans-serif; }
+
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*  SECTION STYLE FORM SIGN UP  */
+.sectionTwo .container .row form{ width: 70%; height: auto; background: #fff; padding: 5em; margin: 0 auto; }
+/*  END SECTION STYLE FORM SIGN UP  */
+/*************************************************************************************************************/
+
+
+
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluye la seccion de (registros en su formulario)*/
+form #secPaddingh{ padding-top: 2em; padding-bottom: 2em; }
+/*************************************************************************************************************/
+
+
+
+
+
+
+/*************************************************************************************************************/
+/**************   COMODINES  ******************/
+/*Espacio padding entre lineas <hr> generales*/
+#paddinghr{ margin-top: 3em; padding-bottom: 3em;  }
+#paddingtop{ padding-top: 2em; }
+#paddingMin{ padding-top: 1em; }
+#paddingbottom{ padding-bottom: 2em; }
+.paddingdiv{ margin-top: 2em;   }
+#parrafosColors{ color: #ecf0f1 !important;  /*#ec7063 color como rojo/naranja*/ }
+#parrafosColorsName{ color: #ec7063 !important; }
+.ColorsForPanels{ background: #145; }
+/*************************************************************************************************************/
+
+
+
+.sectionFacultades{ background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); }
+.jumbotron .row .imageUser{ width: 60%; height: 150px; margin: 0 auto;background: #000 url('') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-ms-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+ }
+
+
+.sectionProfile{ float: none; }
+.flotante{}
+#profileNavbar{ background: #013243; }
+#profileContent{ background: #ECF0F1 !important; }
+
+
+
+/*************************************************************************************************************/
+/*Estilos que incluye la seccion de piÃ© de pagina, footer, derechos de autor*/
+footer{ height: auto; }
+footer .container-fluid .row #footer{ background: #000; height: 4em; padding: 15px; }
+footer .container-fluid .row #footer strong{ color: #fff; font-family: 'Simonetta', cursive; font-size: 0.8em; }
+/*************************************************************************************************************/
+
+nav.uibMenu {
+    background: #34495E;
+    margin: 0;
+    padding: 0;
+}
