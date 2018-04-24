@@ -127,7 +127,7 @@ font-family: 'Krona One', sans-serif; color: #fff; }
 
 .sectionEigth{ background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); }
 .sectionEight .container .row .card{ border-radius: 100px !important; }
-.sectionEight .container .row .card img{ border-radius: 100px !important; }
+.sectionEight .container .row .card-img-top.developer-img{ width: 75%; height: 135%; border-radius: 100%; }
 .sectionEight .container .row h6{ font-size: 1.2em; }
 
 

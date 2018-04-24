@@ -1,1 +1,47 @@
-<h1>Hello Login</h1>
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block container %}
+<section class="sectionTwo" id="sec">
+		<div  class="container" style="height: auto;">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="container">
+						<form action="../../model/loginDB.php" method="post">
+							
+							<div class="form-group row">
+								<div class="col-sm-12"><h1 class="text-secondary text-center">UIB-WEB <kbd>Log-in</kbd></h1></div>
+							</div>
+							<hr id="secPaddingh">
+							<!-- group one form -->
+							<div class="form-group has-success row">
+								<label for="" class="col-sm-2 col-form-label">Username or Email: </label>
+								<div class="col-sm-10"><input name="username" type="text" class="form-control" placeholder="User" id="username or E-mail" required></div>
+							</div>
+
+							<!-- group two form -->
+							<div class="form-group has-success row">
+								<label for="" class="col-sm-2 col-form-label">Password</label>
+								<div class="col-sm-10"><input name="pass" type="password" class="form-control" placeholder="Password" required></div>
+							</div>
+
+							<hr class="secPaddingh">
+							<div class="form-group has-success row">
+								<label for="" class="col-sm-6 col-form-label">¿No tienes una cuenta en UIB?</label><a class="col-sm-6" href="register">Regístrate aquí</a>
+							</div>					
+							
+							<hr class="secPaddingh">
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<button type="submit" class="btn btn-success btn-block btn-lg" name="submit">Entrar</button>
+								</div>
+								<div class="col-sm-6">
+									<a href="home" class="btn btn-danger btn-block btn-lg" type="submit" name="Cancelar" >Cancelar</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% endblock %}	

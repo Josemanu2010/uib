@@ -1,1 +1,186 @@
-<h1>Hello Register</h1>
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block container %}
+
+
+<section class="sectionTwo" id="sec">
+	<div  class="container" style="height: auto;">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="container">
+					<form action="../../model/registrarDB.php" method="post">
+
+						<div class="form-group row">
+							<div class="col-sm-12">
+								<h1 class="text-secondary text-center">UIB-WEB <kbd>Sign-up</kbd></h1>
+							</div>
+						</div>
+						<hr id="secPaddingh">
+						<!-- group one form -->
+						<div class="form-group has-success row">
+							<label for="" class="col-sm-2 col-form-label">Username: </label>
+							<div class="col-sm-10"><input name="username" type="text" class="form-control" placeholder="User" id="username" required></div>
+						</div>
+
+						<!-- group three form -->
+						<div class="form-group has-success row">
+							<label for="" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-10"><input name="email" type="text" class="form-control" placeholder="E-mail" required></div>
+						</div>
+
+						<!-- group two form -->
+						<div class="form-group has-success row">
+							<label for="" class="col-sm-2 col-form-label">Password</label>
+							<div class="col-sm-10"><input name="pass" type="password" class="form-control" placeholder="Password" required></div>
+						</div>
+
+						<!-- group two form -->
+						<div class="form-group has-success row">
+							<label for="" class="col-sm-2 col-form-label">Confirm Password</label>
+							<div class="col-sm-10"><input name="rpass" type="password" class="form-control" placeholder="Re-password" required></div>
+						</div>
+
+						<div class="form-group has-success row">
+							<div class="col-sm-6">
+								<label for="select_facultad"></label>
+								<select class="custom-select" name="select_facultad" id="select_facultad">
+									<option value="">Seleccione facultad</option>
+									<option value="Facultad&nbsp;de&nbsp;ingeniería">Facultad de ingeniería</option>
+									<option value="Facultad&nbsp;de&nbsp;ciencias&nbsp;humanas&nbsp;y&nbsp;sociales">Facultad de ciencias humanas y sociales</option>
+									<option value="Facultad&nbsp;de&nbsp;ciencias&nbsp;de&nbsp;la&nbsp;comunicación">Facultad de ciencias de la comunicación</option>
+									<option value="Facultad&nbsp;de&nbsp;educación">Facultad de educación</option>
+								</select>
+							</div>
+
+							<div class="col-sm-6">
+								<label for="select_progran"></label>
+								<select class="custom-select" name="select_program" id="select_program">
+									<option name="text1" value="select_option">Seleccione programa</option>
+									<option value="Ingeniero&nbsp;Agrícola">Ingeniero agrícola</option>
+									<option value="Tecnologo&nbsp;en&nbsp;electrónica">Tecnologo en electrónica</option>
+									<option value="Ingeniero&nbsp;industrial">Ingeniero industrial</option>
+									<option value="Tecnólogo&nbsp;en&nbsp;informática">Tecnólogo en informática</option>
+									<option value="Tecnólogo&nbsp;en&nbsp;logística&nbsp;empresarial">Tecnólogo en logística empresarial</option>
+									<option value="Tecnólogo&nbsp;en&nbsp;gestion&nbsp;de&nbsp;seguridad&nbsp;en&nbsp;redes&nbsp;de&nbsp;computadores">Tecnólogo en gestion de seguridad en redes de computadores</option>
+									<option value="Profesional&nbsp;en&nbsp;Ciencias&nbsp;Bíblicas">Profesional en Ciencias Bíblicas</option>
+									<option value="Psicólogo(a)">Psicólogo(a)</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Filosofía">Licenciado(a) en Filosofía</option>
+									<option value="Trabajador(a)&nbsp;Social">Trabajador(a) Social</option>
+									<option value="Comunicador(a)&nbsp;Social&nbsp;-&nbsp;Periodista">Comunicador(a) Social - Periodista</option>
+									<option value="Tecnólogo(a)&nbsp;en&nbsp;Realización&nbsp;Audiovisual">Tecnólogo(a) en Realización Audiovisual</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Informática">Licenciado(a) en Informática</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Idioma&nbsp;Extranjero&nbsp;-&nbsp;Inglés">Licenciado(a) en Idioma Extranjero - Inglés</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Educación&nbsp;Básica&nbsp;con&nbsp;énfasis&nbsp;en&nbsp;Educación&nbsp;Artística">Licenciado(a) en Educación Básica con énfasis en Educación Artística</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Educación&nbsp;Infantil">Licenciado(a) en Educación Infantil</option>
+									<option value="Licenciado(a)&nbsp;en&nbsp;Educación&nbsp;Básica&nbsp;con&nbsp;énfasis&nbsp;en&nbsp;Humanidades&nbsp;y&nbsp;Lengua&nbsp;Castellana">Licenciado(a) en Educación Básica con énfasis en Humanidades y Lengua Castellana</option>
+									<option value="Contador(a)&nbsp;público">Contador(a) público</option>
+									<option value="Administrador(a)&nbsp;de&nbsp;Empresas">Administrador(a) de Empresas</option>
+									<option value="Tecnólogo(a)&nbsp;en&nbsp;Costos&nbsp;y&nbsp;Auditoría">Tecnólogo(a) en Costos y Auditoría</option>
+									<option value="Tecnólogo(a)&nbsp;en&nbsp;Gestión&nbsp;de&nbsp;Mercadeo">Tecnólogo(a) en Gestión de Mercadeo</option>
+
+								</select>
+							</div>
+						</div>
+						<hr id="secPaddingh">
+						
+						<div class="form-group row">
+							<div class="col-sm-12">
+								<h4 class="text-secondary text-center">Intereses</h4>
+							</div>
+						</div>
+						<hr class="secPaddingh">
+						<div class="form-group has-success row">
+							<div class="col-sm-4">
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Programación"/>Programación
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Ciencias humanas"/>Ciencias humanas
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Comunicación"/>Comunicación
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Deportes"/>Deportes
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Matemáticas"/>Matemáticas
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Estadística"/>Estadística
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Contabilidad"/>Contabilidad
+								</label>
+							</div>
+							<div class="col-md-4">
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Recursos Humanos"/>Recursos Humanos
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Filosofía"/>Filosofía
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Pos-producción"/>Pos-producción
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Audio visual"/>Audio visual
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Inglés"/>Inglés
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Idiomas"/>Idiomas
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Artes plásticas"/>Artes plásticas
+								</label>
+							</div>
+							<div class="col-md-4">
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Educación"/>Educación
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Primera Infancia"/>Primera Infancia
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Programación web"/>Programación web
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Patrones de diseño"/>Patrones de diseño
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Gerencia Social"/>Gerencia Social
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="Java"/>Java
+								</label>
+								<label class="checkbox col-sm-12">
+									<input class="form-check-input" type="checkbox" name="intereses[]" id="" value="C#"/>C#
+								</label>
+							</div>
+						</div>
+						
+						<hr class="secPaddingh">
+						<div class="form-group has-success row">
+							<label for="" class="col-sm-6 col-form-label">¿Ya tienes cuenta en UIB?</label><a class="col-sm-6" href="login">Entra aquí</a>
+						</div>
+
+						<hr class="secPaddingh">
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-success btn-block btn-lg" name="submit">Registrar</button>
+							</div>
+							<div class="col-sm-6">
+								<a href="home" class="btn btn-danger btn-block btn-lg" type="submit" name="submit" >Cancelar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+{% endblock %}	
