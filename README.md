@@ -2,7 +2,7 @@
 Proyecto sobre red colaborativa para estudiantes
 About project colavorative red students
 
-* This project i'ts under copyright of UIB-WEB app, your main objetives  i'ts the comunication between students.
+This project i'ts under copyright of UIB-WEB app, your main objetives  i'ts the comunication between students.
 
 
 ***************************************************************************************************************
@@ -22,4 +22,4 @@ About project colavorative red students
 ***************************************************************************************************************
 ***************************************************************************************************************
 
-All right reserved - UIB/2018 -Project - by Josemanu2010
+All right reserved - UIB/2018 -Project
