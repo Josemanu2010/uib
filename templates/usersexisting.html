@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block container %}
+
+<section class='sectionEigth' id='sec'>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<div class='text'>
+					<h4 class='text-left text-info' id='parrafosColorsName'>Miembros registrados de UIB:</h4>
+					<p class='text-justify' id='parrafosColors'>Bienvenido <kbd><?php echo utf8_encode($_SESSION['showUsername']); ?></kbd>, en la presente pestaña, podrás visualizar a todos los usuarios que existen en la aplicacion <kbd>UIB-WEB</kbd>, de tal manera que tienes la oportunidad de aprender varias tematicas seleccionando a cualquier alumno entre los diversos programas y/o facultades.</p>
+				</div>
+			</div>
+		</div>
+		<hr id='paddinghr'>
+		<div class='row-fluid'>
+			<?php $query = mysqli_query($conn, "SELECT * FROM usuarios"); ?>
+
+
+			<?php while ($i = $query -> fetch_assoc()) {?>
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<div class="imageUser" id="paddinghr">
+								<label for="">IMG profile</label>
+							</div>
+
+						</div>
+
+						<div class="col-sm-9">
+							<h3 class="text-center text-primary"><kbd><?php echo $i['username_usuario']; ?></kbd></h3>
+							<hr class="paddinghr">
+							<label class="text-success" for="">Facultad:</label>
+							<strong class="text-justify"><?php echo $i['facultad_usuario']; ?></strong>
+							<p></p>
+							<label class="text-success" for="">Programa:</label>
+							<strong class="text-justify"><?php echo $i['programa_usuario']; ?></strong>
+							<p></p>
+							<label class="text-success" for="">Fecha de registro:</label>
+							<strong class="text-justify"><?php echo $i['fecha_registro_usuario']; ?></strong>
+							<div class="row">
+								<div class="col-md-6">
+									<p></p>
+									<a class="2 btn btn-primary" href="">Hablar con alumno <span class="fa fa-comments"></span></a>
+								</div>
+								<div class="col-md-6">
+									<p></p>
+									<a class="2 btn btn-primary" href="">Ver perfil <span class="fa fa-user"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+
+		</div>
+		
+	</div>
+</section>
+
+{% endblock %}

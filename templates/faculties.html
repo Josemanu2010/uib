@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block container %}
+
+<section class="sectionTwel" id="sec">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item">
+						<strong class="text-success">(<?php echo utf8_encode($_SESSION['showUsername']); ?>)</strong>
+						 usted esta en:
+					</li>
+					<li class="breadcrumb-item">
+						<a href="../../../index.php"> Inicio</a>
+					</li>
+					<li class="breadcrumb-item disabled">
+						Facultades
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card bg bg-dark">
+					<div class="card-body">
+						<h4><kbd>Facultad de ingeniería > Programas:</kbd></h4>
+						<p></p>
+						<div class="list-group">
+							<p href="#" class="list-group-item list-group-item-success">Ingeniero(a) en Agroecología</p>
+							<p href="#" class="list-group-item list-group-item-info">Tecnólogo(a) en Electrónica</p>
+							<p href="#" class="list-group-item list-group-item-warning">Ingeniero(a) Industrial</p>
+							<a href="../../../controller/facultad/fingenieria/tec-informatica.php" class="list-group-item list-group-item-danger">Tecnólogo(a) en Informática  : <kbd>Activo</kbd></a>
+							<p href="#" class="list-group-item list-group-item-dark">Tecnólogo(a) en logística empresarial</p>
+							<p href="#" class="list-group-item list-group-item-primary">Tecnólogo(a) en Gestión de Seguridad en Redes de Computadores</p>
+						</div>
+					</div>
+					<div class="card-body">
+						<h4><kbd>Facultad de ciencias humanas y sociales</kbd></h4>
+						<p></p>
+						<div class="list-group">
+							<a href="" class="list-group-item list-group-item-success">Profesional en ciencias bíblicas</a>
+							<a href="" class="list-group-item list-group-item-secondary">Psicólogo(a)</a>
+							<a href="" class="list-group-item list-group-item-info">Licenciado(a) en Filosofía</a>
+							<a href="" class="list-group-item list-group-item-warning">Trabajador(a) Social</a>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<h4><kbd>Facultad de ciencias de la comunicación</kbd></h4>
+						<p></p>
+						<div class="list-group">
+							<a href="" class="list-group-item list-group-item-success">Comunicador(a) social - periodista</a>
+							<a href="" class="list-group-item list-group-item-secondary">Tecnólogo(a) en Comunicación Gráfica</a>
+							<a href="" class="list-group-item list-group-item-info">Tecnólogo(a) en Realización Audiovisual</a>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<h4><kbd>Facultad de educación</kbd></h4>
+						<p></p>
+						<div class="list-group">
+							<a href="" class="list-group-item list-group-item-success">Licenciado(a) en Informática</a>
+							<a href="" class="list-group-item list-group-item-secondary">Licenciado(a) en Idioma Extranjero - Inglés</a>
+							<a href="" class="list-group-item list-group-item-info">Licenciado(a) en Educación Básica con énfasis en Educación Artística</a>
+							<a href="" class="list-group-item list-group-item-warning">Licenciado(a) en Educación Infantil</a>
+							<a href="" class="list-group-item list-group-item-primary">Licenciado(a) en Educación Básica con énfasis en Humanidades y Lengua Castellana</a>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<h4><kbd>Facultad de ciencias empresariales</kbd></h4>
+						<p></p>
+						<div class="list-group">
+							<a href="" class="list-group-item list-group-item-success">Contador(a) público</a>
+							<a href="" class="list-group-item list-group-item-secondary">Administrador(a) de Empresas</a>
+							<a href="" class="list-group-item list-group-item-info">Tecnólogo(a) en Costos y Auditoría</a>
+							<a href="" class="list-group-item list-group-item-warning">Tecnólogo(a) en Gestión de Mercadeo</a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>	
+		</div>
+
+
+	</div>
+</section>
+
+{% endblock %}
