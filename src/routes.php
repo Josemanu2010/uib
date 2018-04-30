@@ -8,3 +8,5 @@ require __DIR__ . '/Routes/RegisterRoute.php';
 require __DIR__ . '/Routes/AboutRoute.php';
 require __DIR__ . '/Routes/FacultiesRoute.php';
 require __DIR__ . '/Routes/UsersexistingRoute.php';
+require __DIR__ . '/Routes/ProfileRoute.php';
+require __DIR__ . '/Routes/ProgramsRoute.php';

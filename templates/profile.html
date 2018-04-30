@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Profile: {{ user.user_name }} {% endblock %}
+{% block container %}
+<section class="sectionProfile">
+	<div class="container-fluid">
+		<div class="row" id="flotante">
+			<div class="col-md-3" id="profileNavbar">
+				<div class="container" id="paddingMin">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card" id="profileNavbar" style="border: none;">
+								<img class="card-img-top" src="{{ user.person_picture == '' ? 'http://s.cafebazaar.ir/1/upload/icons/com.khalili.razejavani.png' : user.person_picture }}" alt="Picture">
+							</div>
+							<hr id="paddingbottom">
+							<label class="text-success" for="">Usuario:</label>
+							<strong class="text-light text-left">@{{ user.user_name }}</strong>
+							<p></p>
+							<label class="text-success" for="">Correo:</label>
+							<strong class="text-light text-left">{{ user.user_email }}</strong>
+							<p></p>
+							<label class="text-success" for="">Fecha de registro:</label>
+							<strong class="text-light text-left">{{ user.user_last }}</strong>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9" id="profileContent">
+				<div class="container" id="paddingMin">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header bg-primary">
+								Los intereses de {{ user.person_name }}{{ user.person_lastname }}	</div>
+								<div class="card-body">
+								    {% for skill in skills %}
+								    	<button type="button" class="btn btn-primary">{{ skill.skill_name|e }}</button>
+								    {% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="paddingtop">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header bg-primary">Facultada la que pertenece</div>
+								<div class="card-body">
+								{{ user.faculty_name }}								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header bg-primary">Programa al que pertenece</div>
+								<div class="card-body">
+								{{ user.program_name|e }}								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

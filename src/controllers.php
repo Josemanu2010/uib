@@ -7,6 +7,8 @@ use App\Controllers\RegisterController;
 use App\Controllers\AboutController;
 use App\Controllers\FacultiesController;
 use App\Controllers\UsersexistingController;
+use App\Controllers\ProfileController;
+use App\Controllers\ProgramsController;
 
 $container['HomeController'] = function ($c) {
     return new HomeController($c);
@@ -34,4 +36,12 @@ $container['FacultiesController'] = function ($c) {
 
 $container['UsersexistingController'] = function ($c) {
     return new UsersexistingController($c);
+};
+
+$container['ProfileController'] = function ($c) {
+    return new ProfileController($c);
+};
+
+$container['ProgramsController'] = function ($c) {
+    return new ProgramsController($c);
 };

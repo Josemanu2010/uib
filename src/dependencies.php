@@ -30,3 +30,9 @@ $container['view'] = function ($c) {
 
     return $view;
 };
+//Session uib
+$container['session'] = function ($container) {
+    return new \Adbar\Session(
+        $container->get('settings')['session']['namespace']
+    );
+};
